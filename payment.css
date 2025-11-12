@@ -1,0 +1,182 @@
+body {
+    background-color: #f8f9fb;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #f1e2c1; /* light brown */
+    padding: 12px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.header-left img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+.header-right {
+    margin-left: 10px;
+}
+.header-right h2 {
+    font-size: 20px;
+    color: #003366;
+    margin: 0;
+}
+.header-right .location {
+    font-size: 13px;
+    color: #444;
+    margin: 2px 0;
+}
+.header-right .tagline {
+    font-size: 11px;
+    color: #666;
+    margin-top: 2px;
+}
+.divider {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0;
+}
+/* Menu button */
+.menu-bar {
+    background-color: #003366;
+    color: white;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/* Sidebar Menu Styling */
+.side-menu {
+    position: absolute;
+    right: 0;
+    top: 161px;
+    width: 0;
+    height: calc(100vh - 130px);
+    background-color: #003366;
+    overflow-x: hidden;
+    transition: 0.3s;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.side-menu ul li {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.side-menu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+.side-menu ul li a:hover {
+    background-color: #00509e;
+}
+
+/* Main Content Styling */
+.main-content {
+    padding: 20px;
+    margin-right: 0; /* Adjust for sidebar overlap if open */
+    background-color: #f8f9fb;
+}
+
+.main-content h3 {
+    color: #003366;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* Table Container for Responsive Design */
+.table-container {
+    overflow-x: auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background: white;
+    margin-bottom: 20px;
+}
+
+.payment-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.payment-table th,
+.payment-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.payment-table th {
+    background-color: #003366;
+    color: white;
+    font-weight: bold;
+}
+
+.payment-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.payment-table td:first-child {
+    font-family: monospace; /* For dates and txn nos */
+    white-space: nowrap;
+}
+
+.print-btn {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.print-btn:hover {
+    background-color: #00509e;
+}
+
+/* Payment Note Styling */
+.payment-note {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.payment-note p {
+    margin: 0;
+    color: #856404;
+    font-size: 14px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 10px;
+    }
+    
+    .payment-table {
+        font-size: 12px;
+    }
+    
+    .payment-table th,
+    .payment-table td {
+        padding: 8px 6px;
+    }
+    
+    .payment-note {
+        padding: 10px;
+        font-size: 13px;
+    }
+}

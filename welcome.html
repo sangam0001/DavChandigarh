@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome - DAV College</title>
+  <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <div class="header-left">
+      <img src="logo.png" alt="DAV College Logo">
+    </div>
+    <div class="header-right">
+      <h2>DAV College</h2>
+      <p class="location">Sector 10, Chandigarh</p>
+      <p class="tagline">Serving Education Since 1958</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Menu Toggle Button -->
+  <div class="menu-bar" onclick="toggleMenu()">☰</div>
+
+  <!-- Sidebar Menu -->
+  <div class="side-menu" id="sideMenu">
+    <ul>
+      <li><a href="index.html">Logout</a></li>
+      <li><a href="#">Admission Application Form</a></li>
+      <li><a href="#">Notice</a></li>
+      <li><a href="#">Student Details</a></li>
+      <li><a href="#">Change Photo/Signature</a></li>
+      <li><a href="#">View Examination Detail</a></li>
+      <li><a href="#">Hostel Admission Application Form</a></li>
+      <li><a href="#">Hostel Declaration Form</a></li>
+      <li><a href="#">Hostel Affidavit</a></li>
+      <li><a href="payment.html">Payment Receipt</a></li>
+      <li><a href="#">Time Table</a></li>
+      <li><a href="#">View My Time Table (BA-I, BA-II, BA-III)</a></li>
+      <li><a href="#">Training & Placement</a></li>
+      <li><a href="#">Change Password</a></li>
+      <li><a href="#">NCC/NSS</a></li>
+      <li><a href="#">Clubs & Societies</a></li>
+      <li><a href="#">Forgot User ID or Password</a></li>
+      <li><a href="#">Right to Service Act</a></li>
+      <li><a href="#">Tele MANAS</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Disclaimer</a></li>
+    </ul>
+  </div>
+
+  <!-- Slideshow Section -->
+  <div class="slideshow-container">
+    <div class="slide active">
+      <img src="5.jpg" alt="DAV College Campus">
+      <div class="slide-text">
+        <h2>All India Rankings by INDIA TODAY</h2>
+        <p>BCA-21 | Arts-38 | Science-37 | Commerce-46</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="1.jpg" alt="DAV College Library">
+      <div class="slide-text">
+        <h2>World-Class Library</h2>
+        <p>Access to thousands of resources for academic excellence.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="2.jpg" alt="DAV College Labs">
+      <div class="slide-text">
+        <h2>State-of-the-Art Labs</h2>
+        <p>Hands-on learning in modern science and technology facilities.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="3.jpg" alt="DAV College Events">
+      <div class="slide-text">
+        <h2>Vibrant Campus Life</h2>
+        <p>Join clubs, societies, and events that shape your future.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="4.jpg" alt="DAV College Achievements">
+      <div class="slide-text">
+        <h2>Excellence in Education</h2>
+        <p>Empowering students since 1958 with quality and innovation.</p>
+      </div>
+    </div>
+
+    <div class="dots-container">
+      <span class="dot active" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="main-content">
+    <h1>Welcome to DAV College Portal</h1>
+    <p>You have successfully signed in.</p>
+    <button class="btn" onclick="window.location.href='index.html'">Log Out</button>
+  </div>
+
+  <script src="welcome.js"></script>
+</body>
+</html>

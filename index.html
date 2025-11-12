@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAV College Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="header-left">
+            <img src="logo.png" alt="DAV College Logo">
+        </div>
+        <div class="header-right">
+            <h2>DAV College</h2>
+            <p class="location">Sector 10, Chandigarh</p>
+            <p class="tagline">Serving Education Since 1958</p>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Menu Toggle Button -->
+    <div class="menu-bar" onclick="toggleMenu()">☰</div>
+
+    <!-- Sidebar Menu -->
+    <div class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="#">Admission Application Form</a></li>
+            <li><a href="#">Notice</a></li>
+            <li><a href="#">Student Details</a></li>
+            <li><a href="#">Change Photo/Signature</a></li>
+            <li><a href="#">View Examination Detail</a></li>
+            <li><a href="#">Admission Application Form</a></li>
+            <li><a href="#">Hostel Admission Application Form</a></li>
+            <li><a href="#">Hostel Declaration Form</a></li>
+            <li><a href="#">Hostel Affidavit</a></li>
+            <li><a href="#">Payment Receipt</a></li>
+            <li><a href="#">Time Table</a></li>
+            <li><a href="#">View My Time Table (BA-I, BA-II and BA-III)</a></li>
+            <li><a href="#">Training & Placement</a></li>
+            <li><a href="#">Change Password</a></li>
+            <li><a href="#">NCC/NSS</a></li>
+            <li><a href="#">Clubs & Societies</a></li>
+            <li><a href="#">Forgot User ID or Password</a></li>
+            <li><a href="#">Right to Service Act</a></li>
+            <li><a href="#">Tele MANAS</a></li>
+            <li><a href="#">contact Us</a></li>
+            <li><a href="#">Disclamer</a></li>
+        </ul>
+    </div>
+
+    <!-- Login Form -->
+    <div class="login-container">
+        <form id="loginForm">
+            <label for="email">Email Id:</label>
+            <input type="email" id="email" placeholder="abc@example.com" required>
+            <a href="#" class="forgot">Forgot UserName?</a>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <a href="#" class="forgot">Forgot Password?</a>
+
+            <label for="captcha">Captcha:</label>
+            <div class="captcha-container">
+                <canvas id="captchaCanvas" width="115" height="40"></canvas>
+                <button type="button" id="refreshCaptcha">↻</button>
+            </div>
+            <input type="text" id="captchaInput" placeholder="Enter Captcha Code" required>
+
+            <button type="submit" class="sign-in">Sign In</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
