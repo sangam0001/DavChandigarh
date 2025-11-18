@@ -1,0 +1,72 @@
+body {
+    background: #f4f5f7;
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.receipt-container {
+    width: 750px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px 40px;
+    border: 1px solid #c7c7c7;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.college-name {
+    text-align: center;
+    font-size: 26px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.receipt-title {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.info-table, .fee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.info-table td {
+    border: 1px solid #c7c7c7;
+    padding: 10px;
+    background: #fafafa;
+}
+
+.fee-table th {
+    background: #e2e2e2;
+    padding: 10px;
+    border: 1px solid #c7c7c7;
+}
+
+.fee-table td {
+    border: 1px solid #c7c7c7;
+    padding: 10px;
+}
+
+.total-row td {
+    background: #f3f3f3;
+    font-size: 16px;
+}
+
+.inquiry {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.note {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #444;
+    text-align: center;
+}
